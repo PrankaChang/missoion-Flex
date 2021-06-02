@@ -140,7 +140,6 @@ table {
 
 .header,
 .menu,
-.menu ul,
 .content,
 .desertItem-sticker,
 .desertItem-caption {
@@ -158,18 +157,20 @@ table {
 
 .menu {
   width: 320px;
-  align-items: center;
 }
+.menu a img {
+  padding: 15px;
+}
+
 .menu ul {
-  width: 215px;
-  align-items: center;
+  display: flex;
 }
 
 .menu ul li a {
   text-decoration: none;
   display: block;
-  padding: 0 15px;
-  line-height: 32px;
+  padding: 15px;
+  margin: 0 5px;
   color: #3f5d45;
 }
 
@@ -272,26 +273,30 @@ table {
 }
 .page {
   margin-bottom: 60px;
-}
-.page ul {
   display: flex;
   justify-content: flex-end;
 }
+
+.page ul {
+  display: flex;
+  align-items: center;
+}
+
 .page ul li {
   width: 60px;
-  height: 60px;
 }
 .page ul li a {
   font-size: 20px;
-  line-height: 60px;
+  line-height: 24px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 17px 0;
 }
 
 .page ul li a:hover {
   background-color: #3f5d45;
   border: 1px solid #3f5d45;
   color: #eaf0ed;
-}
-.page ul li a img {
-  margin-top: 15px;
 }
